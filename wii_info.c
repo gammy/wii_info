@@ -82,7 +82,7 @@ int main(int argc, const char *argv[]) {
 	if(_be32((uint8_t *) &magic) != DISC_MAGIC) {
 		fprintf(stderr, "Invalid disc magic(%x != %x) - invalid disc?\n",
 			_be32((uint8_t *) &magic), DISC_MAGIC);
-		return(EXIT_FAILURE);
+		//return(EXIT_FAILURE);
 	}
 
 	rewind(fp);
